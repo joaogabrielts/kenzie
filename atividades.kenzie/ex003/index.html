@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form action="" method="get" autocomplete="on">
+ 
+        <fieldset>
+
+<p>
+    <label for="inome">Nome:</label>
+    <input type="text" name="nome" id="inome" required placeholder="Digite seu nome aqui...">
+</p>
+
+
+<p>
+    
+         <label for="iemail"> Digite seu e-mail :</label>
+         <input type="email" name="e-email" id="iemail" required autocomplete="email" placeholder="Digite seu email..."> 
+</p>
+
+<p>
+<label for="descrever"> O que te motivou participar do evento?</label> <br>
+
+<textarea name="motivo de participar" id="descrever" cols="40" rows="10" placeholder="Descreva aqui ...." required></textarea>
+
+
+
+</p>
+
+<p>
+    <label for="icurso">Selecione seu módulo : </label>
+    
+    <select name="curso " id="icurso" required>
+    
+     <option value="">escolher módulo</option>
+        <option value="full-stack">Full-Stack</option>
+        <option value="Front-End">Front-End</option>
+        <option value="Back-End">Back-End</option>
+    
+    </select>
+</p>
+
+ <p>
+    <label for="isenha"> Cadastre uma senha :
+    </label>
+    <input type="password" name="Cadastro da senha " id="isenha" required placeholder="Digite sua senha aqui ....">
+</p>
+
+<p>
+    <label for="confirma sua senha">Confirme a senha :</label>
+    <input type="password" name="confirmando senha" id="confirma sua senha" required placeholder="Repita a senha...">
+</p>
+
+
+<p>
+    
+    <label for="sim" >Receber novidades em seu e-email?</label> <br>
+<p>
+    
+        <label for="sim" >sim</label>
+        <input type="radio" name="receber" id="sim" value="sim, quero receber" required>
+    
+    <label for="não">não</label>
+    <input type="radio" name="receber" id="não" value="não, quero receber " required>
+    
+</p>
+    
+</p>
+
+
+
+
+<p>
+<button type="submit">Cadastra</button>
+
+</p>
+        </fieldset>
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>

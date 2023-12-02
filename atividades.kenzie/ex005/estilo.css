@@ -1,0 +1,44 @@
+@charset "UTF-8" ;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body{
+    background-image: url("https://smd-cms.nasa.gov/wp-content/uploads/2023/09/PIA12066_hires.jpg") ;
+    color: white;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    font-family: var(--fonte1);
+}
+
+:root{
+    --fonte1 : 'Open Sans', sans-serif ;
+    --fonte2 : 'Rubik Mono One', sans-serif;
+
+}
+
+h1{
+    font-family: var(--fonte2 );
+    line-height: 50px;
+    
+    
+}
+
+.h2{
+    color: rgb(229, 229, 5);
+}  
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 23px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.fonte {
+    color: rgb(179, 179, 9);
+    font-weight: bolder;
+}

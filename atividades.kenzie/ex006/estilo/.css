@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h2{ 
+   
+    padding-left: 10px;
+}
+.h2-cor{
+    color: blue;
+}
+
+.h2-espaco{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+ p > a{
+    color: rgb(1, 43, 214);
+}
+
+#paragrafo{
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.paragrafo {
+     margin-top: 25px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+p.sobre-p{
+    margin-top: 35px;
+    padding-left: 5px; 
+    padding-bottom: 10px;
+    
+}
+
+main{
+    margin: auto;
+    width: 820px;
+  
+   
+}
+
+#sobre-p{
+ line-height: 30px;
+ padding-right: 0px;
+ padding-left: 5px; 
+ padding-right: 10px;
+
+}  
+
+main article section div p {
+    opacity: 89%;
+}
+
+section div {
+    background-color: blue;
+   color: white;
+   margin-left: 10px;
+
+    
+}
+
+ol > li {
+    margin-left: 40px;
+    margin-bottom: 10px;
+  
+}
+
+ol > li > a{
+    color: black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}  
+
+footer > p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    opacity: 89%;
+}

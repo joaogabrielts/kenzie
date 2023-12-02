@@ -1,0 +1,31 @@
+@charset "UTF-8" ;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Sriracha&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Sriracha&display=swap');
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    width: 429px;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;sans-serif;
+    font-size: 2.5em;
+    color: rgb(76, 0, 240);
+   
+}
+
+p{
+ 
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+    font-size: 1.1em;
+ 
+}
