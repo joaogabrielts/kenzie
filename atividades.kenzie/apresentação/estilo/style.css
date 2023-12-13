@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+:root{
+    --fonte1:'Roboto', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--fonte1);
+}
+
+.cabeçalho{
+    display: flex;
+  flex-direction: row;
+   width: 100%;
+   height: 8vh;
+  justify-content: center;
+  align-items: center;
+     margin-bottom: 30px;
+ box-shadow: 6px 2px 3px rgb(152, 152, 152);
+ 
+}
+
+main{
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    max-height: 1000px;
+    justify-content: center;
+   
+    
+}
+
+section{
+    display: flex;
+    width: 60%;
+    flex-direction:column;
+  
+}
+
+section article:hover{
+    transform: translate(3px, 3px);
+    transition: transform.5s, border 4s;
+   cursor: pointer;
+}
+
+.h3-section{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#link-h3{
+   
+    color: black;
+}
+
+.img-section{
+    margin: auto;
+    display: flex;
+   border-radius: 10px;
+
+   
+}
+
+img{
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.601);
+    box-sizing: border-box;
+   
+}
+
+img:hover{
+    border: 2px solid rgb(94, 255, 0);
+    transform: translate(3px, 3px);
+    transition: transform.5s, border 4s;
+   cursor: pointer;
+}
+
+
+
+#img-article{
+    margin-top: 15%;
+}
+
+.paragrafo-section{
+    text-align: center;
+    margin-top: 15px;
+ 
+}
+
+button{
+   display: flex;
+   margin-top: 20px;
+   margin-left: 10px;
+   border: none;
+   padding: 3px 3px;
+   border-radius: 2px;
+   background-color: rgba(250, 250, 250, 0.816);
+}
+
+#div-button{
+    display: flex;
+}
+
+#button-div{
+    margin-left: 10px;
+}
+
+#dicas-button{
+    margin-bottom: 20px;
+}
+
+aside{
+     display: flex;
+     width: 40%;
+     flex-direction: column;
+     margin-bottom: 20px;
+     margin-left: 20px;
+}
+
+aside h2{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+aside article{
+    display: flex;
+}
+
+
+.aside-img{
+ border-radius: 5px;
+
+}
+
+aside h4{
+  margin-left: 10%;
+}
+
+aside article{
+    margin-bottom: 20px;
+
+}
+ #aside-h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .footer-div{
+    display: flex;align-items: flex-start;
+ }
+
+ #icons-div{
+    margin-right: 100%;
+ }

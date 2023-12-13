@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+h1{
+    background-color: blue;
+    color: white;
+}
+
+
+section{
+    background-color: rgba(159, 159, 228, 0.834);
+}

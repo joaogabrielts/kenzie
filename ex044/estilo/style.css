@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cabecalho{
+    background-color: blue;
+    height: 5%;
+    width: 100%;
+}
+
+.principal_elements{
+    background-color: blueviolet;
+    height: 80vh;
+    margin: 10px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pricipal_information{
+     height: 400px;
+     width: 250px;
+     background-color: aliceblue;
+     border-radius: 4px;
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+nav{
+
+}
+
+ul{
+padding: 10px;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(84, 84, 238, 0.89);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    display: inline-block;
+}

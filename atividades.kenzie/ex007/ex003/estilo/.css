@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+nav{
+
+}
+
+ul{
+
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(64, 59, 59);
+   border-bottom:2px solid rgb(109, 109, 242) ;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 100vw;
+  
+}
