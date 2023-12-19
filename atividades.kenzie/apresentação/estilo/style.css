@@ -17,6 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     font-family: var(--fonte1);
 }
 
@@ -40,6 +41,7 @@ main{
     max-height: 1000px;
     justify-content: center;
    
+    flex-wrap: wrap;
     
 }
 
@@ -47,6 +49,7 @@ section{
     display: flex;
     width: 60%;
     flex-direction:column;
+   
   
 }
 
@@ -54,6 +57,8 @@ section article:hover{
     transform: translate(3px, 3px);
     transition: transform.5s, border 4s;
    cursor: pointer;
+   background-color: rgba(220, 220, 220, 0.649);
+   border-radius: 15px;
 }
 
 .h3-section{
@@ -70,6 +75,7 @@ section article:hover{
     margin: auto;
     display: flex;
    border-radius: 10px;
+   flex-wrap: wrap;
 
    
 }
@@ -127,6 +133,7 @@ aside{
      flex-direction: column;
      margin-bottom: 20px;
      margin-left: 20px;
+     
 }
 
 aside h2{
