@@ -20,7 +20,7 @@ let escola = {
 
 let curso = {
     Nome : '',
-    DuraçãoEmAnos : '',
+    DuracaoEmAnos : '',
     Turma : '',
     Módulos : '',
 }
@@ -37,7 +37,7 @@ const carro = {
     classes: ["sedan"],  
     luxo: true,
     potencia: 200, 
-    estacionado: true,  
+    estacionado: false,  
   }
  
 
@@ -98,7 +98,7 @@ const carro = {
  }
 //console.log(naoMaisLuxo());
 //console.log(carro.luxo);
-/*
+
 function naoMaisLuxo1(){
     if(!carro.estacionado){
         return `O carro ${placaDoCarro} não está estacionado` 
@@ -109,4 +109,4 @@ function naoMaisLuxo1(){
     return `O carro ${placaDoCarro} não é mais considerado um carro de luxo`
 }
 console.log(naoMaisLuxo());
-console.log(carro.luxo);*/
+console.log(carro.luxo);
