@@ -49,7 +49,6 @@ function calculaMedia(listaA){
      for(let i = 0; i < listaA.length; i++){
      for(let j = 0; j < listaA[i].materias.length; j++){
         let notaTotal = 0 
-       // let doisPrimeiro = []
       let listab = listaA[i].materias[j]
       for(let b = 0; b < listab.avaliacoes.length; b++){ 
             if(b < 2){
@@ -64,7 +63,7 @@ function calculaMedia(listaA){
         }
      }
     }  
-//calculaMedia(listaAlunos);
+
 
 const onibus = {
     capacidade: 40,
@@ -132,32 +131,24 @@ const onibus = {
           poltrona: 2,
         } 
       },
-    ]
-  }
-
- 
-
-  /*Desenvolva um método que recebe a parada atual como parâmetro e verifica se é igual ao valor de paradas do objeto onibus. OK
-  
-  Esse método deverá verificar em quais passageiros o destino é igual à parada atual do ônibus. ok */ 
-
-function onibusParadas(parada){
-     let descerNaParada = []
+    ],
+    descida: function(parada){
+       let descerNaParada = []
   for(let i = 0 ; i < onibus.paradas.length; i++){
      if(parada.toLowerCase() === onibus.paradas[i].toLowerCase()){
         for(let j = 0; j < onibus.passageiros.length;j++){
-            if(onibus.paradas[i].toLowerCase() === onibus.passageiros[j].bilhete.destino.toLowerCase()){
+          let bilheteDestino = onibus.passageiros[j].bilhete.destino.toLowerCase()
+            if(onibus.paradas[i].toLowerCase() === bilheteDestino){
                descerNaParada.push(onibus.passageiros[j])
             }
         }
      }
   }
-  return descerNaParada
-} 
-console.log(onibusParadas("Volta Redonda-RJ"));
-
-
-
+  return descerNaParada  
+    }
+  }
+ 
+  console.log(onibus.descida('Volta Redonda-RJ'));
 
 /*'São Paulo-SP',
     'Campinas-SP',
