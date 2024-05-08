@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/style/globalStyles.css" />
+    <link rel="stylesheet" href="./src/style/index.css" />
+    <script src="./src/scripts/index.js" defer></script>
+
+    <title>Modal Registro</title>
+  </head>
+  <body>
+    <main>
+      <div class="main__container">
+        <section class="slogan">
+          <img src="./src/assets/pair_programming.svg" />
+        </section>
+        <form class="form">
+          <div class="form__group">
+            <label for="email">E-mail</label>
+            <input class="input__box" type="text" name="email" id="email" />
+          </div>
+          <div class="form__group">
+            <label for="password">Senha</label>
+            <input
+              class="input__box"
+              type="text"
+              name="password"
+              id="password"
+            />
+          </div>
+          <a href="#" target="_blank" class="form__forgot-pass"
+            >Esqueceu a senha?</a
+          >
+          <a href="#" target="_blank" class="form__register-link">
+            Ainda não tem conta? Cadastre-se aqui!
+          </a>
+          <button class="form__login-btn">Entrar</button>
+        </form>
+      </div>
+    <dialog id="dialog_form">  
+         <form action="#" method="get"  class="form" autocomplete="on">
+        <div class="div_form">
+            <div class="form_grupo">
+            <input class="div_input" type="text" name="nome" id="nome" placeholder="Nome" >  
+            </div>
+            <div class="form_grupo"> 
+           <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome" class="div_input"> 
+            </div>
+            <div class="form_grupo">
+          <input class="div_input" type="email" name="Celular ou Email" id="Celular ou Email" placeholder="Celular ou email" >
+            </div>
+            <div class="form_grupo">
+          <input type="password" name="password" id="password" placeholder="Nova senha" class="div_input">
+            </div>
+        <div class="div_button">
+        <button class="button_div">Fechar Modal</button>
+        <button class="button-div-cadastro">cadastrar</button>
+        </div>
+        </div>          
+         </form>
+    </dialog>
+ 
+    </main>
+  </body>
+</html>

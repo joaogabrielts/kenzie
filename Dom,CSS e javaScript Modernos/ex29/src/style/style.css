@@ -1,0 +1,36 @@
+body, h1, button, div {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+
+
+
+dialog {
+    padding: 0;
+    
+    width: 500px; /* a partir dessas propriedades a tag dialog terá largura e altura fixa. */
+    height: 300px;
+    
+    border: 1px solid black;
+  }
+
+  .modal__container {
+    padding: 0;
+    
+    width: 500px;
+    height: 300px;
+    
+    border: 1px solid red;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  dialog::backdrop {
+    background-color: rgba(0,0,0, 0.8);
+  }

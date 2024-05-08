@@ -1,0 +1,48 @@
+@import url(global.css);
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+ 
+}
+
+.div-box__img{
+    margin-top: 10px;
+    width: 500px;
+    height: 301px;
+    position: absolute;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.div-box__text{
+    position: absolute; bottom: 10px; left: 20px; 
+    border-radius: 16px;
+    z-index: 1;
+    background-color:  #099268;
+    padding: 8px 16px;
+    color: rgb(255, 254, 254);
+}
+
+.titulo{
+    margin-top: 50px ;
+}
+
+.div-text{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+div > p{
+    text-align: justify;
+}
+
