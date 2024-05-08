@@ -10,12 +10,11 @@
 body{
     position: relative;
     margin: 0px;
+   
 }
 
 .main-contanie{
-position: absolute;
-top:50px;
-left: 60px;
+
 display: flex;
 height: 100%;
 justify-content: center;
@@ -130,9 +129,13 @@ font-family: Arial, Helvetica, sans-serif;
      font-weight: bolder;
 }
 
+@media (){
+    
+}
 
 @media(min-width: 720px) {
 
+   
     .div-img{
         width: 100%;
         height:100%;
