@@ -1,6 +1,6 @@
 const menuButton = document.querySelector("#button")
 console.log(menuButton);
-const menu = document.querySelector(".menu-principal")
+const menu = document.querySelector(".nav-container")
 console.log(menu);
 
 menuButton.addEventListener("click", () =>{
