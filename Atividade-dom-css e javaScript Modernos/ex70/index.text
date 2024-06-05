@@ -1,0 +1,71 @@
+const list = [
+    {title: "Fazer comprar no supermercado", delete: 'Excluir'},
+    {title: 'Meditar durante  30 minutos ', delete: 'Excluir'},
+    {title: 'Almoçar ás 12:30', delete: 'Excluir'},
+    {title: 'Ler o livro Y depois do almoço', delete: 'Excluir'},
+]
+
+
+function renderElemento(arry){
+    const ul = document.querySelector("ul")
+    const main = document.querySelector('main')
+    main.appendChild(ul)
+    ul.innerHTML = ''
+    for(let i = 0; i < arry.length; i++){
+        const list = arry[i]
+        const listItem = createTaskItem(list)
+        ul.appendChild(listItem)
+    }
+}
+renderElemento(list)
+
+function createTaskItem(task){
+    const div = document.createElement('div')
+    const li = document.createElement('li')
+    const p = document.createElement('p')
+    const button = document.createElement('button')
+    button.addEventListener('click', (index) => {
+        list.splice(index,1)
+        const arraySemUmItem = JSON.stringify(list)
+        localStorage.setItem('listaDeAfazeres', arraySemUmItem)
+        console.log(list);
+        renderElemento(list)
+    })
+
+    div.classList.add('div')
+    li.classList.add('content__lista')
+    p.classList.add("content__lista--title")
+    p.innerText = task.title
+    button.classList.add("content__lista--button")
+    button.innerText = task.delete
+    div.appendChild(li)
+    li.appendChild(p)
+    li.appendChild(button)
+    return li
+}
+
+
+
+
+function novaTarefa(){
+    const buttonInput = document.getElementsByClassName("content__add--button")[0]
+    buttonInput.addEventListener('click', (event) =>{
+        event.preventDefault()
+        const inputForm = document.getElementById('content__add--input')
+        const novaTarefa = {title: inputForm.value, delete: 'Exluir'}
+        list.unshift(novaTarefa)
+        
+      
+     const arrayNovo = JSON.stringify(list)
+     localStorage.setItem('listaDeAfazeres', arrayNovo)
+        console.log(novaTarefa);
+        renderElemento(list)
+  
+    })
+    
+
+    
+    console.log(list);
+
+}
+novaTarefa()
