@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "prettier": "^3.3.2"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "index.js": "^0.0.3"
+  }
+}

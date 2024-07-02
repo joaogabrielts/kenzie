@@ -6,7 +6,7 @@ export const data = [
       description:
         'Os notebooks da linha Kenzie 5 são convenientemente portáteis e elegantes para acompanhar suas tarefas do dia a dia. Os recursos tecnológicos de sua confiança ao seu lado sempre que precisar. Desempenho suficiente para todas as tarefas, com Processador Intel Core 10ª geração. Você cria, edita, compartilha e assiste vídeos, fotos e imagens sem dificuldades.',
       image:
-        'https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        'Imagem do WhatsApp de 2024-06-24 à(s) 17.27.02_7d78c633.jpg',
     },
     {
       id: 2,
