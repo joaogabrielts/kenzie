@@ -1,0 +1,13 @@
+.exampleList{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    list-style:none;
+}
+
+
+.exampleList li{
+    border: 1px solid;
+    padding: 1rem;
+}
