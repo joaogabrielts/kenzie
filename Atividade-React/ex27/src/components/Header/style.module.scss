@@ -1,0 +1,39 @@
+header {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        color: white;
+        padding-left: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    li {
+
+        list-style: none;
+        padding-right: 20px;
+    }
+
+    button {
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        width: 100%;
+        background: transparent;
+        border: none;
+    }
+}
+
+.liDestaque {
+    background-color: rgb(11, 212, 11);
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+}

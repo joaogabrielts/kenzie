@@ -1,0 +1,9 @@
+.user{
+    padding: 20px;
+    border: 1px solid;
+}
+
+.active{
+    background-color: black;
+    color: white;
+}
