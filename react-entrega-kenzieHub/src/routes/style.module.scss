@@ -1,0 +1,46 @@
+
+
+@import url("/src/styles/globalStyles.css");
+
+.customToast {
+  background-color: var(--grey-2) !important;
+  margin-right: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+    height: 8px;
+    width: 100%;
+    background-color: #44a13d; 
+    border-radius: 0px 0px 0px 4px;
+    animation: borderAnimation 5s linear forwards;
+  }
+}
+
+
+.customToastError {
+  
+  color: #721c24; 
+
+  &::after {
+    background-color: red; 
+  }
+}
+
+
+@keyframes borderAnimation {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+

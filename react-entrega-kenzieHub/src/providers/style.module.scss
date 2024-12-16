@@ -1,0 +1,35 @@
+@import url("/src/styles/globalStyles.css");
+
+.customToast {
+  display: flex;
+  flex-direction: row;
+  box-sizing: content-box;
+  position: relative;
+  
+  padding-right: 16px;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  .closeButton {
+    position: absolute;
+    top: -4px;
+    right: -15px;
+    background: none;
+    border: none;
+    color: var(--grey-1);
+    cursor: pointer;
+    transition: color 0.2s;
+    font-size: var(--title-size-3);
+    font-weight: var(--title-3);
+    &:hover {
+      color: #ffffff; 
+    }
+  }
+ 
+
+  .toastcontent {
+    display: flex;
+   
+    color: var(--grey-0);
+  }
+}
+

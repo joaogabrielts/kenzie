@@ -6,6 +6,8 @@ export const UserContext = createContext({});
 
 export const UserProvider = ({ children }) => {
    const [user, setUser] = useState(null);
+   
+   
    const [loading, setLoading] = useState(false);
 
    const navigate = useNavigate();
@@ -42,6 +44,8 @@ export const UserProvider = ({ children }) => {
       try {
          const { data } = await api.post("/login", formData);
          setUser(data.user);
+         console.log(data.user);
+         
          localStorage.setItem("@USERID", data.user.id);
          localStorage.setItem("@TOKEN", data.accessToken);
          navigate("/");

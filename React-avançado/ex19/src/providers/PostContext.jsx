@@ -1,4 +1,4 @@
-import { useContext} from "react";
+import { useContext } from "react";
 import { createContext, useState } from "react";
 import { UserContext } from "./UserContext";
 import { api } from "../services/api";
@@ -8,9 +8,9 @@ export const PostContext = createContext({});
 
 export const PostProvider = ({ children }) => {
   const { user } = useContext(UserContext);
+  const [editingPost, setEditingPost] = useState(null);
 
-
-  const { data : postList} = useQuery({
+  const { data: postList } = useQuery({
     queryKey: ["posts"],
     queryFn: async () => {
       const { data } = await api.get("/news");
@@ -18,10 +18,7 @@ export const PostProvider = ({ children }) => {
     },
   });
 
-  const [editingPost, setEditingPost] = useState(null);
-
   console.log(editingPost);
-
 
   const postCreate = async (formData) => {
     try {
@@ -77,7 +74,6 @@ export const PostProvider = ({ children }) => {
       });
 
       const newPostList = postList.filter((post) => post.id !== deletingId);
-      setPostList(newPostList);
 
       alert("Exclusão realizada com sucesso!");
     } catch (error) {
