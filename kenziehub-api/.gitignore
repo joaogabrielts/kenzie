@@ -22,4 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-m3-s1-entrega-portfolio-template
+
+.vercel
