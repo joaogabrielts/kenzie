@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import { UserContext } from "../../providers/UserTechContext";
 import { Link } from "react-router-dom";
 import style from "./style.module.scss";
+import { UserContext } from "../../providers/UserTech";
 
 export const LoginForm = () => {
   const { register, handleSubmit } = useForm();

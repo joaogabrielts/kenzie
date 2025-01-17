@@ -1,14 +1,16 @@
-import { PostProvider } from "./providers/PostTech";
-import { UserProvider } from "./providers/UserTechContext";
+
+
+import { UserProvider } from "./providers/UserTech";
+import { TechProvider } from "./providers/TechContext";
 import { RoutesMain } from "./routes";
 
 function App() {
   return (
     <>
       <UserProvider>
-        <PostProvider>
+        <TechProvider>
           <RoutesMain />
-        </PostProvider>
+        </TechProvider>
       </UserProvider>
     </>
   );

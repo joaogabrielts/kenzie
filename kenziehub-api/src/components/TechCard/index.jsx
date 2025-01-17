@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import style from "./style.module.scss";
-import { PostContext } from "../../providers/PostTech";
+import { TechContext } from "../../providers/TechContext";
+
 
 export const TechCard = ({ tech }) => {
-  const { postDelete, setEditingPost } = useContext(PostContext);
+  const { postDelete, setEditingPost } = useContext(TechContext);
 
   return (
     <li className={style.li}>

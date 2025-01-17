@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { useKeydowm } from "../../hooks/useKeydowm";
 import { useForm } from "react-hook-form";
-import { PostContext } from "../../providers/PostTech";
+
 import style from "./style.module.scss";
+import { TechContext } from "../../providers/TechContext";
 
 export const EditTechModal = () => {
-  const { postUpdate, editingPost, setEditingPost } = useContext(PostContext);
+  const { postUpdate, editingPost, setEditingPost } = useContext(TechContext);
 
   const { register, handleSubmit } = useForm({
     defaultValues: {
@@ -14,10 +15,8 @@ export const EditTechModal = () => {
       status: editingPost?.status || "Primeiro módulo",
     },
   });
- 
 
   const submit = (formData) => {
-    
     postUpdate.mutate(formData);
   };
 
@@ -37,7 +36,11 @@ export const EditTechModal = () => {
         <form onSubmit={handleSubmit(submit)}>
           <div className={style.formGroup}>
             <label>Nome do projeto</label>
-            <input type="text" {...register("title")}  placeholder="Material UI"/>
+            <input
+              type="text"
+              {...register("title")}
+              placeholder="Material UI"
+            />
           </div>
           <div className={style.formGroup}>
             <label> Status</label>

@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import { useKeydowm } from "../../hooks/useKeydowm";
 import style from "./style.module.scss";
-import { UserContext } from "../../providers/UserTechContext";
 import { useForm } from "react-hook-form";
-import { PostContext } from "../../providers/PostTech";
+import { UserContext } from "../../providers/UserTech";
+import { TechContext } from "../../providers/TechContext";
+
 
 export const CreateModal = () => {
   const {  setIsOpen } = useContext(UserContext);
-  const { postCreate } = useContext(PostContext);
+  const { postCreate } = useContext(TechContext);
   const { register, handleSubmit } = useForm();
 
   const submit = (formData) => {

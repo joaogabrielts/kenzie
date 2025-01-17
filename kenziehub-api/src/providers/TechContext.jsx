@@ -1,13 +1,15 @@
+
 import toast from "react-hot-toast";
 import { createContext, useContext, useState } from "react";
-import { UserContext } from "./UserTechContext";
+
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "../services/api";
 import style from "./style.module.scss";
+import { UserContext } from "./UserTech";
 
-export const PostContext = createContext({});
+export const  TechContext  = createContext({});
 
-export const PostProvider = ({ children }) => {
+export const  TechProvider = ({ children }) => {
   const { user, revalidateUser, setErro } = useContext(UserContext);
   const [editingPost, setEditingPost] = useState(null);
 
@@ -140,7 +142,7 @@ export const PostProvider = ({ children }) => {
 
   return (
     <>
-      <PostContext.Provider
+      <TechContext.Provider
         value={{
           user,
           postCreate,
@@ -152,7 +154,7 @@ export const PostProvider = ({ children }) => {
         }}
       >
         {children}
-      </PostContext.Provider>
+      </TechContext.Provider>
     </>
   );
 };

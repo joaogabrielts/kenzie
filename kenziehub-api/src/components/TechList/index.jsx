@@ -1,7 +1,8 @@
 import { useContext } from "react";
-import { UserContext } from "../../providers/UserTechContext";
 import { TechCard } from "../TechCard";
 import style from "./style.module.scss";
+import { UserContext } from "../../providers/UserTech";
+
 
 export const TechList = () => {
   const { user, userLogout, setIsOpen } = useContext(UserContext);

@@ -39,7 +39,7 @@ export const UserProvider = ({ children }) => {
     if (userId && token) {
       autoLogin();
     }
-  }, []);
+  }, [navigate]);
 
   const revalidateUser = async () => {
     const userId = localStorage.getItem("@USERID");
